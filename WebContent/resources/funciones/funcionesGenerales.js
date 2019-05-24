@@ -337,6 +337,7 @@ function transaccionDatosRetornoID(URLrecurso,  idForma, inicializaforma, funcio
     			console.log("exito: funcion Exito ejecutada");
     			console.log(response);
     			console.log(response.idNumTramite)
+        		retornarDenuncias();
         	}
           },
           error:function(response){
