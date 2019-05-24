@@ -1,0 +1,39 @@
+CHANGELOG de SMG y su base de datos testsecurity y reportes
+------------------------------------------------------------
+Procedimiento para crear un nuevo tramite
+1 Crear tramite en las tablas base de datos testsecurity 
+	--> tabla catalogo_tramite columna <nombreTramite>
+	--> tabla relacion_jsp_tramite columna <nombreTramite>	
+	--> crear tabla <nombreTramite> en testsecurity
+
+2 Crear pagina web jsp en pages/tramites/
+
+3 Crear Modelo en com.mkyong.users.model CLASS <nombreTramite>
+
+4 Crear un Service, interface y clase que implemente la interface, la clase Service
+	debe usar los metodos de su futura clase DAO
+
+5 Crear un Data Access Object (DAO), su interface y la implementacion en una nueva clase
+	en el DAO implementar Persistencia con la base de datos
+
+6 Crear 3 METODOS REQUEST MAPPING 	
+	/register_<nombreTramite> en TramitesController
+	/listacomboTramite_<nombreTramite>
+	/consultaTramite_<nombreTramite>
+----------------------------------------------------------------
+Cambios realizados en SMG
+Dom. 15 de Mayo de 2015
+Agregado nueva clase
+com.mkyong.users.model.PresentanInfoImpacto
+									
+
+---------------------------------------------------------------------
+Cambios realizados 19 de Mayo
+Se quito un campo fechaemision de Impacto que no se ocupa
+-----------------------------------------------------------------------
+Se ha creado el tramite Presentan Información Impacto en el nuevo sistema SMG, 
+Fecha de publicación: 23/05/2016
+===========================================================================
+
+
+

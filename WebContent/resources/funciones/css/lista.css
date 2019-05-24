@@ -1,0 +1,63 @@
+ #tablaLista td {
+	font-size: 0.9em;
+}
+
+#encabezadoLista {
+	background-color: #659CD8;			
+	color: #fff;
+}
+
+#cajaLista {
+	position: relative;
+	margin: 0px 0px 0px 0px;				
+	border:solid 1px #DBDBDB;		
+	background-color: #FFFFFF;
+}
+
+
+#cajaListaContenedor {
+	position: relative;
+	margin: 0px 0px 0px 0px;				
+	border:solid 1px #DBDBDB;		
+	background-color: #FFFFFF;
+}
+
+#elementoLista tr {
+	margin: 0px 0px 3px 0px;
+	padding: 3px;
+	cursor: pointer;
+	list-style-type:none;
+}
+
+#elementoLista tr:hover {		
+	background-color: #DDDDDD;
+}
+
+/*comentario: es para ingreso de pacientes para la lista de paquetes a agregar */
+#divLista ul{
+	list-style-type:none;
+}
+#divLista ul li{
+	pardding: 7px;
+	border-radius: 3px;
+}
+#divLista ul li:nth-child(odd){
+	background:#f1f1f1;
+}
+#divLista ul li:nth-child(even){
+	background:#fff;
+}
+
+#divLista ul li a.clsEliminarElemento{
+	padding: 5px;
+	border: solid 1px #ccc;
+	background: #fff url(../images/roundcube-eliminar.gif) center no-repeat;
+	border-radius: 3px;
+	width: 16px;
+	display: inline-block;
+	margin-right: 10px;
+	cursor: pointer;
+}
+#divLista ul li a.clsEliminarElemento:hover{
+	border-color: #f00;
+}
